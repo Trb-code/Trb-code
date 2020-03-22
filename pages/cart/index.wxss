@@ -1,0 +1,105 @@
+.cartdata{
+    display: flex;
+    margin-top: 30rpx;
+}
+.cartxianqing{
+    display: flex;
+    margin-right: 5rpx;
+    margin-left: 5rpx;
+    
+}
+.img image{
+
+    width: 191rpx;
+    height: 191rpx;
+}
+
+
+.cartrgth{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+}
+.shuzi{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.cartdata .iconfont.icon-xuanzhong{
+    color: #ea4890;
+ margin-top: 87rpx;
+  margin-left: 8rpx;
+}
+
+.goods_price{
+    color: #ea4890;
+}
+
+.num{
+   padding:25rpx;
+}
+.active{
+  margin-top: 87rpx;
+  margin-left: 10rpx;
+  height: 35rpx;
+  width: 35rpx;
+  border-radius: 50%;
+  border: 1rpx solid #8A8A8A;
+  color: white;
+  float: left;
+}
+ .tools_set {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  border: 1rpx solid #ccc;
+  background-color: white;
+  height: 83rpx;
+}
+.tools_set .tools_left {
+  display: flex;
+  align-items: center;
+}
+.tools_set .tools_left .iconfont.icon-xuanzhong {
+  color: var(--themeColor);
+  margin-left: 23rpx;
+}
+.tools_set .tools_left .unselected {
+  height: 35rpx;
+  width: 35rpx;
+  border-radius: 50%;
+  border: 1rpx solid #8A8A8A;
+  margin-left: 23rpx;
+}
+ .tools_set .tools_left .allSelectText {
+  font-size: 21rpx;
+  color: #8A8A8A;
+  margin-left: 24rpx;
+}
+.tools_set .tools_left .totalText {
+  margin-left: 36rpx;
+  font-size: 26rpx;
+  color: #292929;
+}
+.tools_set .tools_left .totalPrice {
+  color: red;
+  font-size: 28rpx;
+}
+
+ .tools_set .tools_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52rpx;
+  width: 150rpx;
+  background-color: red;
+  color: white;
+  font-size: 21rpx;
+  border-radius: 26rpx;
+  margin-right: 21rpx;
+}

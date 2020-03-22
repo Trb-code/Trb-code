@@ -1,0 +1,28 @@
+.goodtitle{
+    display: flex;
+    height: 88rpx;
+ 
+}
+.titleitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.active{
+    border-bottom: 1px solid red;
+}
+.leftlist image{
+    width: 191rpx;
+    height: 191rpx;
+}
+.goodslist navigator{
+    display: flex;
+    margin-bottom: 25rpx;
+} 
+
+.rigth{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}

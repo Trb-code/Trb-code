@@ -1,0 +1,4 @@
+<view>
+<button open-type="getUserInfo" type="primary"  bindgetuserinfo="getUserInfotap" > 点击授权</button>
+</view>
+  

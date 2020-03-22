@@ -1,0 +1,27 @@
+<view>
+    <Search />
+</view>
+<!-- 内容 -->
+<view class="catedata">
+    <view class="cateleft">
+        <scroll-view scroll-y="true" bindscroll="scroll" class="scrollview" scroll-left>
+            <view wx:for="{{listdata}}" wx:key="index" bindtap="leftbindtap" data-index="{{index}}" class="{{index==leftindex?'active':''}}">
+                {{item.cat_name}}
+            </view>
+        </scroll-view>
+    </view>
+    <!-- 右边列表 -->
+    <view class="caterigth">
+        <scroll-view scroll-y="true" class="rigthcata" bindscroll="scroll" scroll-left>
+            <view wx:for="{{listdata[leftindex].children}}" wx:key="index" class="catetitle">
+                <view class="clear">/{{item.cat_name}}/</view>
+                <!-- 右边图片 -->
+                <navigator url="/pages/goods_list/index?cid={{item.cat_id}}" open-type="navigate" wx:for="{{item.children}}" wx:key="{{item.cat_id}}">
+                    <view class="imgnav">
+                        <image src="{{item.cat_icon}}" />
+                    </view>
+                </navigator>
+            </view>
+        </scroll-view>
+    </view>
+</view>

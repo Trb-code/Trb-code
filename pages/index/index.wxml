@@ -1,0 +1,16 @@
+<view>
+  <Searchinput />
+</view>
+<!-- 头部搜索框结束 -->
+<!-- 轮播图开始 -->
+<view class="swiperdata">
+  <swiper indicator-dots autoplay interval="2000" duration="500" easing-function="{{easeInOutCubic}}">
+    <block wx:for="{{swiperlist}}" wx:key="{{item.goods_id}}">
+      <swiper-item>
+        <navigator class="swiper" url="{{item.navigator}}" open-type="{{item.open-type}}">
+          <image src="{{item.image_src}}" mode="widthFix" />
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

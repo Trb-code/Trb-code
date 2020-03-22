@@ -1,0 +1,43 @@
+<view  class="cartdata"  wx:for="{{cart}}" wx:key="index">
+<view class="{{item.check?'iconfont icon-xuanzhong':'active'}}"  bindtap="check" data-goods_id="{{item.goods_id}}">
+</view>
+<view  class="cartxianqing">
+    <view class="img">
+        <image class="" src="{{item.goods_small_logo}}" mode="widthFix" />       
+    </view>
+      <view class="cartrgth">
+          <view>
+              {{item.goods_name}}            
+          </view>
+          <view class="shuzi">
+              <view class="goods_price">
+                  ￥{{item.goods_price}}
+              </view>
+              <view class="jiajian">             
+                  <span class="iconfont  icon-iconset0187"  bindtap="handjiajian"  data-goods_id="{{item.goods_id}}" data-oper="{{-1}}"></span>
+                 <span class="num">   {{item.num}}  </span> 
+                 <span class="iconfont    icon-54"  data-goods_id="{{item.goods_id}}" bindtap="handjiajian" data-oper="{{1}}"></span>
+              </view>        
+          </view>       
+      </view>
+</view>
+</view>
+<!-- 底部 -->
+
+  <!-- 底部工具栏开始 -->
+    <view class="tools_set">
+      <!-- 左边工具栏开始 -->
+      <view class="tools_left">
+        <view class="{{allcheck?'iconfont icon-xuanzhong':'unselected'}}" bindtap="handleAllChecked"></view>
+        <view class="allSelectText">全选</view>
+        <view class="totalText">合计:</view>
+        <view class="totalPrice">￥{{totalprice||0}}</view>
+      </view>
+      <!-- 左边工具栏结束 -->
+               <view class="tools_right" wx:if="{{totalnum}}">
+             <navigator url="/pages/pay/index">去结算({{totalnum||0}})</navigator>
+         </view>
+</view>
+  
+
+  

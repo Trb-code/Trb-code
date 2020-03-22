@@ -1,0 +1,9 @@
+<!-- 地图使用练习 -->
+<view>
+    <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" bindcontroltap="controltap"  bindmarkertap="markertap" markers="{{markers}}"  bindregionchange="regionchange" show-location style="width: 80%; height: 300px;"></map>
+</view>
+
+<view>
+    我现在当前的位置：{{city}}
+</view>
+  

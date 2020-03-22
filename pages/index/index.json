@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Searchinput": "../../compontes/searchinput/Searchinput"
+  },
+  "enablePullDownRefresh": true
+}

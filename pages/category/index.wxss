@@ -1,0 +1,59 @@
+
+.cateleft{
+  height:calc(100vh - 100rpx) ;
+ 
+}
+
+.scrollview{
+   width: 182rpx;
+   height: 100%
+ 
+}
+.scrollview view{
+    text-align: center;
+   padding-top: 24rpx;
+}
+.scrollview view:nth-child(1){
+    padding-top: 12rpx;
+}
+
+.active{
+    color: #ea4350;
+}
+
+
+.catedata{
+    display: flex;
+}
+.caterigth{
+   height: calc(100vh - 100rpx);
+  width: calc(100vw - 182rpx);
+  overflow: hidden;
+}
+
+.catetitle{
+    text-align: center; 
+}
+
+ .imgnav{
+     width: 120rpx;
+  height: 120rpx;
+  float: left;
+ margin: 24rpx 20rpx 20rpx 50rpx;
+
+}
+.clear{
+    clear:both;
+    height:0;
+    
+}
+.imgnav image{
+   width:120rpx;
+    height: 120rpx;   
+  
+} 
+
+.rigthcata{
+    height: 100%;
+
+}

@@ -1,0 +1,106 @@
+.swiper{
+    width: 750rpx;
+    height: 497rpx;
+}
+ swiper{
+     width: 497rpx;
+    height: 497rpx;
+    margin: 0 auto;
+
+}
+swiper-item image{
+    width: 497rpx;
+    height: 497rpx;
+    box-sizing: border-box;
+}
+
+.price{
+    color:#eb4450;
+    padding-bottom:10rpx;
+}
+
+.title{
+    margin: 15rpx;
+}
+
+.goods_name{
+ color:   #434343 
+}
+
+.tool_sets {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  background-color: #FFFF;
+  width: 100vw;
+  border: 1rpx solid #DEDEDE;
+  height: 94rpx;
+  /* 联系客服 */
+  /* 购物车 */
+  /* 加入购物车 */
+}
+ .tool_sets .contact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+ .tool_sets .contact .text {
+  text-align: center;
+  font-size: 20rpx;
+}
+ .tool_sets .contact button {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+ .tool_sets .gouwuche {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tool_sets .gouwuche .text {
+  text-align: center;
+  font-size: 20rpx;
+}
+.tool_sets .addToCart {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tool_sets .addToCart .text {
+  font-size: 26rpx;
+  height: 60rpx;
+  width: 196rpx;
+  border-radius: 30rpx;
+  color: white;
+  background-color: #FCAA23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tool_sets .buy {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tool_sets .buy .text {
+  font-size: 26rpx;
+  height: 60rpx;
+  width: 196rpx;
+  border-radius: 30rpx;
+  background-color: #ea4890;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

@@ -1,0 +1,22 @@
+<!-- 头部开始 -->
+<view class="goodtitle">
+    <view wx:for="{{title}}" wx:key="{{item.id}}" class="titleitem {{index==goodindex?'active':''}}" bindtap='titlehand' data-index='{{index}}'>
+        {{item.name}}
+    </view>
+</view>
+<view wx:if="{{goodindex==0}}" wx:for="{{goodsindexdata}}" wx:key="{{index}}">
+    <view class="goodslist">
+        <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" open-type="navigate">
+            <view class="leftlist">
+                <image src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" mode="widthFix" />
+            </view>
+            <view class="rigth">
+                <view>{{item.goods_name}}</view>
+                <view>{{item.goods_price}}</view>
+            </view>
+        </navigator>
+    </view>
+</view>
+<view wx:if="{{goodindex==1}}">22</view>
+<view wx:if="{{goodindex==2}}">33</view>
+<!-- 头部结束 -->

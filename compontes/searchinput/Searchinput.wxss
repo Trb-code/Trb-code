@@ -1,0 +1,14 @@
+.searchinput {
+  width: 750rpx;
+  background-color: #ea4890;
+  height: 100rpx;
+}
+.searchinput navigator {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700rpx;
+  height: 80rpx;
+  background-color: #fff;
+}
